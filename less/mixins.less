@@ -1,1 +1,12 @@
-// Mixins in here
+// Mixins in here.
+// TODO create a parametric mixin that can create the missing buttons in the design file.
+
+.button-mixin(@background-color, @text-color) {
+    background-color: @background-color;
+    color: @text-color;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    max-width: 200px;
+    border-radius: 15px; 
+}

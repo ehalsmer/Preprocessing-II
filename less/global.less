@@ -4,6 +4,9 @@
 
 html {
   font-size: 62.5%;
+  @media @mobile {
+    margin: 0.8rem;
+  }
 }
 
 html, body {
@@ -15,11 +18,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+  @media @mobile {
+    font-size: 2.4rem;
+  }
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   padding-bottom: 10px;
 }
 
@@ -30,7 +36,7 @@ h4 {
 
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   padding-bottom: 10px;
 }
 
@@ -44,3 +50,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+
+
+a {
+  font-size: 1.3rem;
+}
+
+

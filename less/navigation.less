@@ -1,1 +1,22 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 1.2rem;
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 0rem 1.2rem;
+    }
+    @media @mobile {
+        nav {
+            padding-top: 2.2rem;
+            padding-bottom: 0rem;
+            justify-content: space-between;
+            a {
+                margin: 0rem 3rem;
+            }
+          }
+    }
+}

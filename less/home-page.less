@@ -1,4 +1,31 @@
+// Put header styling in here
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed grey;
+  align-items: center;
+  padding-bottom: 2.2rem;
+  @media @mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    h1 {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+.top-img {
+  width: 100%;
+  height: auto;
+
+}
 .home {
+
+  .top-section {
+    padding: 20px 0px 15px 0px;
+    border-bottom: 1px dashed grey;
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +33,29 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 0px;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+      }
 
       img {
         border-radius: 10px;
@@ -26,15 +66,29 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        padding-left: 0%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        padding-right: 0%;
+        padding-left: 0;
+      }
     }
   }
 
@@ -56,6 +110,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      h2 {
+        font-size: 2rem;
+      }
+      .btn {
+        .button-mixin(@button-bg, white);
+      }
     }
+
   }
 }// home
+
+.copyright {
+  font-size: 10pt;
+}
