@@ -6,6 +6,14 @@ header {
   border-bottom: 1px dashed grey;
   align-items: center;
   padding-bottom: 2.2rem;
+  @media @mobile {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    h1 {
+      padding-bottom: 1.5rem;
+    }
+  }
 }
 .top-img {
   width: 100%;
@@ -24,15 +32,30 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px 0px;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding-left: 0%;
+      }
 
       img {
         border-radius: 10px;
@@ -43,15 +66,29 @@ header {
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      padding-bottom: 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        padding-left: 0%;
+        padding-right: 0;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @mobile {
+        padding-right: 0%;
+        padding-left: 0;
+      }
     }
   }
 
@@ -77,7 +114,7 @@ header {
         font-size: 2rem;
       }
       .btn {
-        .button-mixin(teal, white);
+        .button-mixin(@button-bg, white);
       }
     }
 

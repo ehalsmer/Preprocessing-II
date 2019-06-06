@@ -132,6 +132,11 @@ table {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 500px) {
+  html {
+    margin: 0.8rem;
+  }
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -145,6 +150,11 @@ h5 {
 }
 h1 {
   font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.4rem;
+  }
 }
 h2 {
   font-size: 2.5rem;
@@ -181,6 +191,16 @@ nav a {
   color: black;
   padding: 0rem 1.2rem;
 }
+@media (max-width: 500px) {
+  nav nav {
+    padding-top: 2.2rem;
+    padding-bottom: 0rem;
+    justify-content: space-between;
+  }
+  nav nav a {
+    margin: 0rem 3rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -199,6 +219,16 @@ header {
   align-items: center;
   padding-bottom: 2.2rem;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+  }
+  header h1 {
+    padding-bottom: 1.5rem;
+  }
+}
 .top-img {
   width: 100%;
   height: auto;
@@ -213,13 +243,32 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -228,13 +277,33 @@ header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    padding-left: 0%;
+    padding-right: 0;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0%;
+    padding-left: 0;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -257,7 +326,7 @@ header {
   font-size: 2rem;
 }
 .home .content-pick .destination .btn {
-  background-color: teal;
+  background-color: #17A2B8;
   color: white;
   text-align: center;
   padding: 1rem;
